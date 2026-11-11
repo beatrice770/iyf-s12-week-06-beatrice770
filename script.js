@@ -1,6 +1,6 @@
 const cityInput =document.getElementById("cityInput");
 const searchBtn =document.getElementById("searchBtn");
-const weatherDiv =document.getElementById("weather")
+const weatherDiv =document.getElementById("weather");
 searchBtn.addEventListener("click",getWeather);
 async fuction get weather() {
   const city = cityInput.value;
