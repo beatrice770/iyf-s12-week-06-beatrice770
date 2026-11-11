@@ -2,7 +2,7 @@ const cityInput =document.getElementById("cityInput");
 const searchBtn =document.getElementById("searchBtn");
 const weatherDiv =document.getElementById("weather");
 searchBtn.addEventListener("click",getWeather);
-async fuction getWeather() {
+async function getWeather() {
   const city = cityInput.value.trim();
   if (!city) {
     alert("Please enter a city name");
