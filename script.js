@@ -15,12 +15,11 @@ async fuction get weather() {
     const data = await response.json();
     const current =
       data.current_condition[0];
-    weatherDiv.innerHTML = '
+    `weatherDiv.innerHTML = ``
       <h2>{city}/h2>
       <p>Temperature: ${current.temp_C} C</P>
-    <P>Weather: $
-    {current.weatherDesc[0].value}</p>'
-    ';
+    <P>Weather: ${current.WeatherDesc[0].value}</p>
+    \;`
   } catch (error) {
     WeatherDiv.textContent = "Unable to fetch weather data.;
   }
