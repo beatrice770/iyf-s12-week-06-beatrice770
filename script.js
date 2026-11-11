@@ -19,7 +19,7 @@ async fuction get weather() {
       <h2>{city}/h2>
       <p>Temperature: ${current.temp_C} C</P>
     <P>Weather: ${current.WeatherDesc[0].value}</p>
-    \;`
+    `;
   } catch (error) {
     WeatherDiv.textContent = "Unable to fetch weather data.;
   }
